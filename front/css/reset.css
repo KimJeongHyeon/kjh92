@@ -1,0 +1,178 @@
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	outline: 0;
+	border: 0;
+	padding: 0;
+	background: transparent;
+}
+
+* { margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', "맑은 고딕" ,"malgun gothic" ,"돋움", dotum, AppleGothic;;
+}
+html, body {
+	font-family:'나눔고딕', NanumGothic, 'Nanum Gothic', "맑은 고딕" ,"malgun gothic" ,"돋움", dotum, AppleGothic;
+	font-size: 13px;
+	color: #000;
+	line-height: 1.6;
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+	line-height: normal !important;
+}
+section {display: block;}
+
+/* 본문 기본 설정, 리스트 블릿 제거, 인용 구문 제거 */
+h1, h2, h3, h4, h5 {font-size: 100% !important;}
+body { overflow-y: scroll; overflow:hidden;}
+a, a:link, a:visited, a:active, a:hover { 
+	color: #000; 
+	text-decoration: none; 
+}
+li { list-style: none; }
+ol, ul { 
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+}
+img { 
+	border: 0; 
+	max-width: 100%;
+}
+p { 
+	margin: 0; 
+	padding: 0;
+}
+blockquote, q { 
+	quotes: none;
+}
+a, img {
+	border:0; 
+	padding: 0;
+}
+
+/* insert, delete */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/* 테이블 설정 */
+table {
+	margin: 0 -1px;
+	border:0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	cellspacing:0;
+	cellpadding:0;
+}
+table-layout {width: 100%;}
+
+/*라벨 정렬*/
+label { vertical-align: -1px; }
+
+/*인풋박스*/
+input[type="text"] {}
+input[type="radio"] {}
+input[type="checkbox"] {}
+textarea {resize:none;}
+
+
+
+/* 터치 스크롤 슬라이드 부드럽게 */
+ -webkit-overflow-scrolling: touch;
+
+
+/* font 관련 */
+.ls0 {letter-spacing: 0 !important;}
+
+/*정렬 관련*/
+.al { text-align: left !important; }
+.ac { text-align: center !important; }
+.ar { text-align: right !important; }
+.vt { vertical-align: top !important; }
+.vm { vertical-align: middle !important; }
+.vb { vertical-align: bottom !important; }
+
+.fl { float: left; }
+.fr { float: right; }
+.fc { float: center; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.clfl:after { *zoom: 1; }
+.clfl:after { content: ""; display: block; clear: both; }
+* html .clfix { height: 1%; }/*Hides from IE-mac*/
+.clfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+.clfix { display: inline-block; }
+.clfix { zoom: 1; }/*for IE 5.5-7*/
+.ovh {overflow: hidden !important; }
+
+
+
+/*margin 관련 */
+.m0 { margin: 0px !important; }
+.mt0 { margin-top: 0px !important; }
+.mt27 { margin-top: 27px !important; }
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important; }
+.mt40 {margin-top: 40px !important;}
+.mb0 { margin-bottom: 0px !important; }
+.mb30 {margin-bottom: 30px !important;}
+.mr0 { margin-right: 0px !important; }
+.ml0 { margin-left: 0px !important; }
+.ml10 { margin-left: 10px !important; }
+.ml30 {margin-left: 30px !important;}
+.ml50 {margin-left:50px !important;}
+.mr30 {margin-right: 30px !important ;}
+
+/*padding 관련*/
+.p0 { padding: 0px !important; }
+.pt0 { padding-top: 0px !important; }
+.pt30 {padding-top: 30px !important;}
+.pb0 { padding-bottom: 0px !important; }
+.pr0 { padding-right: 0px !important; }
+.pl0 { padding-left: 0px !important; }
+
+/* line-height*/
+.l0 { line-height: 0px !important; }
+
+/*폰트관련*/
+.fw_b { font-weight: bold !important; }
+
+
+
+-moz-selection { background-color: #88a4bf; color: #fff; } ::selection { background-color: #88a4bf; color: #fff; }
+
+
+/*input {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+}
+
+select {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+}
+.sel  {width: 180px; height: 25px; font-size: 13px; color:#202020; border: 1px solid #1d1d1d; box-sizing:border-box;  text-indent: 10px; background: url(/front/image/prod_view/select_arrow.gif) 95% center no-repeat; } 
+* {-webkit-text-size-adjust:none;}
+select::-ms-expand { display: none; }
+*/
