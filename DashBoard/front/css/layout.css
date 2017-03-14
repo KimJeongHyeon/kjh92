@@ -70,11 +70,16 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
 .admin_icon li {float: left; padding: 3px 15px;}
 .admin_icon li a {display: block; width: 20px; height: 30px;}
 .admin_icon .msg img {width: 20px; margin-top: 8px;}
+.admin_icon .msg a {background: url(../../images/header/btn_msg.png) center center no-repeat; background-size:100%;}
+.admin_icon .msg a:hover {background: url(../../images/header/btn_msg_active.png) center center no-repeat; background-size:100%;}
+.admin_icon .alrm {padding-right: 10px;}
 .admin_icon .alrm img {width: 15px;}
+.admin_icon .alrm a {background: url(../../images/header/btn_alrm.png) center center no-repeat; background-size:100%; background-size:75%;}
+.admin_icon .alrm a:hover {background: url(../../images/header/btn_alrm_active.png) center center no-repeat; background-size:75%;}
 .btn_logout {float: left; height: 34px; line-height: 34px;}
-.btn_logout a {display: block; color:#2f4050 !important;}
+.btn_logout a {display: block; color:#2f4050 !important; background: url(../../images/header/btn_logout.png) center left no-repeat; padding-left: 30px; background-size: 20px}
 .btn_logout img {width: 20px; margin-top: 8px; margin-right: 5px;}
-.btn_logout a:hover {font-weight: 600;}
+.btn_logout a:hover {font-weight: 600; background: url(../../images/header/btn_logout_active.png) center left no-repeat; background-size:20px;}
 
 
 /*.menu_on_bg {background: #333; position: fixed; top:50px; right:0; opacity: 0.8; width: 0%; height: 0%; }*/
@@ -98,11 +103,11 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
   float: right;
 }
 
-.dropdown {
+.dropdown.pro_drop {
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown.pro_drop .dropdown-content {
   display: inline-block;
   display: none;
   position: absolute;
@@ -114,7 +119,7 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
   top:-30px;
 
 }
-.dropdown-content a {
+.dropdown.pro_drop .dropdown-content a {
     color: black;
     padding: 15px;
     text-decoration: none;
@@ -123,9 +128,9 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
     color:#333 !important;
     box-sizing: border-box;
 }
-.dropdown-content a:hover {background-color: #eee; color:#2e6da4 !important;}
-.dropdown-content .logout {background: #ece1c8;}
-.dropdown-content .logout a:hover {background: #ece1c8; color:#333 !important; font-weight: 600;}
+.dropdown.pro_drop .dropdown-content a:hover {background-color: #eee; color:#2e6da4 !important;}
+.dropdown.pro_drop .dropdown-content .logout {background: #ece1c8;}
+.dropdown.pro_drop .dropdown-content .logout a:hover {background: #ece1c8; color:#333 !important; font-weight: 600;}
 
 .show {
   display: block;
@@ -173,7 +178,7 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
 
 
 .main_section .container-fluid {padding: 0; height: 100%;}
-.sidebar {background: #2f4050; position: fixed; top:51px; bottom:0; left:0; z-index: 1000; display: block; box-sizing:border-box; width: 220px; overflow:visible;}
+.sidebar {background: #2f4050; position: fixed; top:51px; bottom:0; left:0; z-index: 1000; display: block;  overflow-y: auto; box-sizing:border-box; width: 220px; overflow:visible;}
 .nav>li>a {color:#fff;}
 
 .nav-sidebar-toggle {cursor:pointer;}
@@ -184,7 +189,6 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
     z-index: 1;
     top: 0;
     left: 0;
-    /*overflow-x: hidden;*/
     transition: 0.5s;
     padding-top: 50px;
     padding-left:0;
@@ -196,7 +200,7 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
     font-size: 14px;
     display: block;
     transition: 0.3s;
-    width: 220px;
+    /*width: 220px;*/
     color:#fff;
     box-sizing:border-box;
 }
@@ -225,42 +229,51 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
 .mini_nav li {box-sizing:border-box;}
 .mini_nav li a {display: block; box-sizing: border-box; transition: all 0.15s; text-align: center; padding:10px 0;}
 .mini_nav li a img {width: 30px; height: 30px;}
-.mini_nav>li>a:focus, .mini_nav>li>a:hover, .mini_nav>li>a.active{
+/*.mini_nav>li>a:focus, .mini_nav>li>a:hover, .mini_nav>li>a.active{
   background-color: #516b84;
   border-left: 5px solid #ffa200;
   box-sizing: border-box;
 }
 
-
+*/
 .mini_nav .dropdown {
     display: block;
-    height: 0;
+    height: 50px;
 }
 
-.mini_nav .dropdown-content {
-  display: inline-block;
-  display: none;
+.mini_nav .dropdown .dropdown-menu {
   position: absolute;
-  background-color: #fff;
+  background-color:#2f4050;
+  box-shadow: none !important;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   z-index: 1;
-  right:-265px;
-  top:-30px;
-
+  left:60px;
+  top:0px;
+  padding: 0;
+  box-shadow: none;
+  margin:0;
+  border:none;
+  border-radius: 0;
 }
-.mini_nav .dropdown-content a {
+.mini_nav .dropdown .dropdown-menu a {
     color: black;
-    padding: 15px;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
     font-size: 12px;
-    color:#333 !important;
+    color:#fff !important;
     box-sizing: border-box;
+    text-align: left;
+    background-color:#2f4050;
 }
-.mini_nav .dropdown-content a:hover {background-color: #eee; color:#2e6da4 !important;}
-.mini_nav .dropdown-content .logout {background: #ece1c8;}
-.mini_nav .dropdown-content .logout a:hover {background: #ece1c8; color:#333 !important; font-weight: 600;}
+#minidrop > li > a {}
+.mini_sub_tit {padding:10px; display: block; font-size: 13px; color:#fff !important;}
+.mini_sub li a {padding-left: 30px !important;}
+
+.mini_nav .dropdown .dropdown-menu li a:hover {background-color: #516b84 !important; font-weight: 600;}
+
+.mini_nav .dropdown .dropdown-menu .logout {background: #ece1c8;}
+.mini_nav .dropdown .dropdown-menu .logout a:hover {background: #ece1c8; color:#333 !important; font-weight: 600;}
 
 .show {
   display: block;
