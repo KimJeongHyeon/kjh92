@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ko">
 <head>
-	<meta https-equiv='Content-Type' content='text/html; charset=utf-8' />
-	<meta https-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
 	<meta name="format-detection" content="telephone=no,address=no,noemail=no">
 <!-- 	<meta name="title" content="비오테크 컨설팅">
@@ -140,7 +140,7 @@
 					        			<p class="dropbtn" onclick="fn_Dropdown()">Web Publisher 
 											<span class="arr_img hvr-pulse"></span>
 					        			</p>
-					        			<div class="dropdown">
+					        			<div class="dropdown pro_drop">
 										  	<div id="myDropdown" class="dropdown-content">
 										  		<ul>
 										  			<li><a href="#">Profile</a></li>
@@ -181,39 +181,135 @@
 				            </div>
 
 				            <ul class="mini_nav">
-				            	<li>
-				            		<a href="#" class="dd" onclick="fn_Mininav()">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 			            				<img src="images/main/icon_card_w.png" alt="메뉴1">
 			            			</a>
-<!-- 			            			<div class="dropdown">
-				            			<ul id="minidrop" class="dropdown-content minsub01">
-				            				<li><a href="#">프로젝트등록</a></li>
-											<li><a href="#">프로젝트조회</a></li>
-				            			</ul>
-			            			</div> -->
+			            			<ul class="dropdown-menu">
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					프로젝트관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 프로젝트등록</a></li>
+												<li><a href="#">- 프로젝트조회</a></li>
+			            					</ul>
+			            				</li>
+			            				<li>
+											<div class="mini_sub_tit">
+				            					프로젝트 인력관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 투입인력등록</a></li>
+												<li><a href="#">- 투입인력조회</a></li>
+			            					</ul>
+			            				</li>
+			            				<li>
+			            					<div class="mini_sub_tit">
+			            						프로젝트 일정관리
+			            					</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 일정등록</a></li>
+												<li><a href="#">- 일정조회</a></li>
+			            					</ul>
+			            				</li>
+			            				<li>
+			            					<div class="mini_sub_tit">
+			            						프로젝트별 프로그램 관리
+			            					</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 프로그램등록</a></li>
+												<li><a href="#">- 프로그램조회</a></li>
+			            					</ul>
+			            				</li>
+			            			</ul>
 				            	</li>
-				            	<li>
-				            		<a href="javscript:">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_diamond_w.png" alt="메뉴2">
 				            		</a>
+				            		<ul class="dropdown-menu">
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					CSR 관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- CSR 현황</a></li>
+			            					</ul>
+			            				</li>
+			            				<li>
+											<div class="mini_sub_tit">
+				            					게시판
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- FAQ</a></li>
+			            					</ul>
+			            				</li>
+			            			</ul>
 				            	</li>
-				            	<li>
-				            		<a href="javscript:">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_gift_w.png" alt="메뉴3">
 				            		</a>
+				            		<ul class="dropdown-menu">
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					경비관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 경비등록</a></li>
+			            						<li><a href="#">- 경비조회</a></li>
+			            					</ul>
+			            				</li>
+			            			</ul>
 				            	</li>
-				            	<li>
-				            		<a href="javscript:">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_card_w.png" alt="메뉴1">
 				            		</a>
+				            		<ul class="dropdown-menu">
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					현황관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 프로젝트 현황</a></li>
+			            						<li><a href="#">- 회사별 CSR 현황</a></li>
+			            					</ul>
+			            				</li>
+			            			</ul>
 				            	</li>
-				            	<li>
-				            		<a href="javscript:">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_diamond_w.png" alt="메뉴2">
 				            		</a>
+				            		<ul class="dropdown-menu">
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					시스템관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 메뉴관리</a></li>
+			            						<li><a href="#">- 프로그램 관리</a></li>
+			            						<li><a href="#">- 조직관리</a></li>
+			            						<li><a href="#">- 그룹관리</a></li>
+			            						<li><a href="#">- 권한관리</a></li>
+			            					</ul>
+			            				</li>
+			            				<li>
+				            				<div class="mini_sub_tit">
+				            					공통관리
+				            				</div>
+			            					<ul class="mini_sub">
+			            						<li><a href="#">- 사용자관리</a></li>
+			            						<li><a href="#">- 고객사관리</a></li>
+			            						<li><a href="#">- 공통코드관리</a></li>
+			            					</ul>
+			            				</li>
+			            			</ul>
 				            	</li>
-				            	<li>
-				            		<a href="javscript:">
+				            	<li class="dropdown">
+				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_gift_w.png" alt="메뉴3">
 				            		</a>
 				            	</li>
@@ -232,23 +328,25 @@
 										  if ( state ) {
 										  	$('#mySidenav').css("width","220px");
 										  	$('.main').css("marginLeft","220px");
-										  	$('.mini_nav').css("display","none");
 										  	setTimeout(function(){
-										  		$('.text_nav').css("display","block");
-										    }, 300);
+										  		$('.mini_nav').css("display","none");
+										    }, 200);
 										    setTimeout(function(){
 										    	// $('.sidenav').css("overflow","visible");
-										    }, 600);
+										  		$('.text_nav').css("display","block");
+										    }, 400);
 										  } else {
 										    $('#mySidenav').css("width","60px");
 										  	$('.main').css("marginLeft","60px");
 										    // $('.sidenav').css("overflow","hidden");
+										    $('.text_nav').css("display","none");
 										    setTimeout(function(){
-										  		$('.text_nav').css("display","none");
-										    }, 200);
-										     setTimeout(function(){
 										  		$('.mini_nav').css("display","block");
-										    }, 400);
+										    }, 200);
+										    setTimeout(function(){
+										    	// $('.sidenav').css("overflow","visible");
+										  		$('.text_nav').css("display","none");
+										    }, 300);
 										  }
 										  state = !state;
 										});
@@ -272,15 +370,16 @@
 									    }
 									  }
 									}
-									// /* job drop */
-									// function fn_Mininav() {
+
+									// /* mini nav */
+									// function fn_Mininav02() {
 									//     document.getElementById("minidrop").classList.toggle("show");
 									// }
 									// // Close the dropdown menu if the user clicks outside of it
 									// window.onclick = function(event) {
-									//   if (!event.target.matches('.dd')) {
+									//   if (!event.target.matches('.mini_icon_menu')) {
 
-									//     var dropdowns = document.getElementsByClassName("dropdown-content");
+									//     var dropdowns = document.getElementsByClassName("#minidrop.dropdown-content");
 									//     var i;
 									//     for (i = 0; i < dropdowns.length; i++) {
 									//       var openDropdown = dropdowns[i];
@@ -341,18 +440,18 @@
 					            	<ul class="admin_icon">
 					            		<li class="msg">
 					            			<a href="#" data-toggle="tooltip" title="메세지">
-					            				<img src="images/header/btn_msg.png" alt="메세지">
+					            				<!-- <img src="images/header/btn_msg.png" alt="메세지"> -->
 					            			</a>
 					            		</li>
 					            		<li class="alrm">
 					            			<a href="#" data-toggle="tooltip" title="알림">
-					            				<img src="images/header/btn_alrm.png" alt="알림">
+					            				<!-- <img src="images/header/btn_alrm.png" alt="알림"> -->
 					            			</a>
 					            		</li>
 					            	</ul>
 					            	<div class="btn_logout">
 					            		<a href="javascript:">
-					            			<img src="images/header/btn_logout.png" alt="로그아웃">
+					            			<!-- <img src="images/header/btn_logout.png" alt="로그아웃"> -->
 					            			LOGOUT
 					            		</a>
 					            	</div>
