@@ -439,18 +439,18 @@
 					            	</ul>
 					            	<ul class="admin_icon">
 					            		<li class="msg">
-					            			<a href="#" data-toggle="tooltip" title="메세지">
+					            			<a href="#" data-toggle="tooltip" title="메세지" onclick="fn_Msg()">
 					            				<!-- <img src="images/header/btn_msg.png" alt="메세지"> -->
 					            			</a>
 					            		</li>
 					            		<li class="alrm">
-					            			<a href="#" data-toggle="tooltip" title="알림">
+					            			<a href="#" data-toggle="tooltip" title="알림" onclick="fn_Alrm()">
 					            				<!-- <img src="images/header/btn_alrm.png" alt="알림"> -->
 					            			</a>
 					            		</li>
 					            	</ul>
 					            	<div class="btn_logout">
-					            		<a href="javascript:">
+					            		<a href="#" onclick="fn_Logout()">
 					            			<!-- <img src="images/header/btn_logout.png" alt="로그아웃"> -->
 					            			LOGOUT
 					            		</a>
@@ -461,6 +461,15 @@
 								$(document).ready(function(){
 								    $('[data-toggle="tooltip"]').tooltip(); 
 								});
+								function fn_Alrm() {
+								    alert("알림창 준비중입니다.");
+								}
+								function fn_Msg() {
+								    alert("메세지창 준비중입니다.");
+								}
+								function fn_Logout() {
+								    alert("로그아웃창 준비중입니다.");
+								}
 							</script>
 				        	<div class="main-wrap">
 				        		<h1 class="">Dashboard</h1>
