@@ -193,6 +193,7 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
     padding-top: 50px;
     padding-left:0;
     padding-right:0;
+    overflow:visible;
 }
 #accordian a {
     padding: 8px 20px;
