@@ -17,6 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	background: transparent;
 }
+html {overflow: hidden;	}
 
 * { margin: 0;
 	padding: 0;
@@ -37,7 +38,7 @@ section {display: block;}
 
 /* 본문 기본 설정, 리스트 블릿 제거, 인용 구문 제거 */
 h1, h2, h3, h4, h5 {font-size: 100% !important;}
-body { overflow-y: scroll; overflow:hidden;}
+body {overflow:hidden;}
 a, a:link, a:visited, a:active, a:hover { 
 	color: #000; 
 	text-decoration: none; 
