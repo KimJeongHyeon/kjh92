@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="front/css/bootstrap.min.css">
 	<link rel="stylesheet" href="front/css/bootstrap-theme.min.css">
 	<script type="text/javascript" src="front/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
 	
 	<script type="text/javascript" src="front/js/design.js"></script>
@@ -73,7 +74,7 @@
 					            <span class="icon-bar"></span>
 					            <span class="icon-bar"></span>
 					        </button>
-				            <a class="navbar-brand" href="index.html">Project name</a>
+				            <a class="navbar-brand" href="#">Project name</a>
 				        </div>
 				        <div id="navbar" class="navbar-collapse collapse">
 				        	<ul class="nav navbar-nav navbar-left">
@@ -101,22 +102,6 @@
 							function myFunction(x) {
 							    x.classList.toggle("change");
 							}
-
-							// $(function(){
-							// 	// resizeH();
-							// 	// $(window).resize(function(){
-							// 	// 	resizeH();
-							// 	// })
-							// 	// function resizeH(){
-							// 	// 	var winH = $(window).height();
-							// 	// 	$('.menu_on_bg').height(winH);
-							// 	// }
-
-							// 	$(".menu").on("click",function(){ 
-							// 		 $(".menu_on_bg").effect("scale", { percent: 200}, 1000).animate({left: 200, width:100%, height:100%}, 1000);
-							// 	}); 
-							// });
-						
 						</script>
 			        </div>
 			    </nav>
@@ -371,38 +356,6 @@
 									  }
 									}
 
-									// /* mini nav */
-									// function fn_Mininav02() {
-									//     document.getElementById("minidrop").classList.toggle("show");
-									// }
-									// // Close the dropdown menu if the user clicks outside of it
-									// window.onclick = function(event) {
-									//   if (!event.target.matches('.mini_icon_menu')) {
-
-									//     var dropdowns = document.getElementsByClassName("#minidrop.dropdown-content");
-									//     var i;
-									//     for (i = 0; i < dropdowns.length; i++) {
-									//       var openDropdown = dropdowns[i];
-									//       if (openDropdown.classList.contains('show')) {
-									//         openDropdown.classList.remove('show');
-									//       }
-									//     }
-									//   }
-									// }
-									// $(function() {
-									// 	$('#accordian > li > a').on("click", function(){
-									// 		if(false == $(this).next().is(':visible')) {
-									// 			$('.nav_sidebar_sub').slideUp(300);
-									// 			$('#accordian > li ').removeClass('active');
-									// 			$(this).addClass('active');
-									// 		}
-									// 		$(this).next().slideToggle(300);
-									// 		$('#accordian > li > a').toggleClass('active');
-									// 	});
-									// 	$('#accordian ul:eq(0)').show();
-									// })
-
-
 									$(document).ready(function () {
 										$('#accordian > li > a').click(function(){
 										    if ($(this).attr('class') != 'active'){
@@ -440,21 +393,19 @@
 					            	<ul class="admin_icon">
 					            		<li class="msg">
 					            			<a href="#" data-toggle="tooltip" title="메세지" onclick="fn_Msg()">
-					            				<!-- <img src="images/header/btn_msg.png" alt="메세지"> -->
 					            			</a>
 					            		</li>
 					            		<li class="alrm">
 					            			<a href="#" data-toggle="tooltip" title="알림" onclick="fn_Alrm()">
-					            				<!-- <img src="images/header/btn_alrm.png" alt="알림"> -->
 					            			</a>
 					            		</li>
 					            	</ul>
 					            	<div class="btn_logout">
 					            		<a href="#" onclick="fn_Logout()">
-					            			<!-- <img src="images/header/btn_logout.png" alt="로그아웃"> -->
 					            			LOGOUT
 					            		</a>
 					            	</div>
+					            	
 					            </div>
 				        	</div>
 				        	<script>
@@ -472,6 +423,107 @@
 								}
 							</script>
 				        	<div class="main-wrap">
+<!-- 				        		<div class="btn_admin">
+				        			<a class="dropbtn drb" onclick="fn_Admin_drop()">
+										<img src="images/header/btn_admin_menu.png" alt="개인메뉴">
+				        			</a>
+				        			<div class="dropdown admin_drop">
+									  	<div id="admin_menu" class="dropdown-content admin_cont">
+									  		<ul>
+									  			<li><a href="#">Profile</a></li>
+									  			<li><a href="#">Contacts</a></li>
+									  			<li><a href="#">회원정보수정</a></li>
+									  			<li class="logout"><a href="#">Logout</a></li>
+									  		</ul>
+									  	</div>
+									</div>
+				        		</div> -->
+								<div class="w3-dropdown-click btn_admin">
+								    <button onclick="admin_drop()" class="frm_btn"><img src="images/header/btn_admin_menu.png" alt="개인메뉴"></button>
+								    <div id="admin_menu" class="w3-dropdown-content w3-bar-block w3-border admin_menu">
+								  		<div class="scroll-bar-wrap">
+									  		<ul class="admin_tab">
+									        	<li class="active" rel="tab1">Introduction</li>
+										        <li rel="tab2">CI</li>
+										    </ul>
+										    <div class="scroll-bar-wrap">
+										        <div id="tab1" class="scroll-box">
+											<p>1212Consectet adipisicinzzzg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										        </div>
+										         <div class="cover-bar"></div>										        
+										        <div id="tab2" class="scroll-box">
+<p>Consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										        </div>
+										         <div class="cover-bar"></div>
+										    </div>
+									    </div>
+							<!-- 		    <div class="scroll-bar-wrap">
+										  <div class="scroll-box">
+										    <p>Consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+										  </div>
+										  <div class="cover-bar"></div>
+										</div> -->
+								    </div>
+								</div>
+
+								<script>
+									function admin_drop() {
+									    var x = document.getElementById("admin_menu");
+									    if (x.className.indexOf("w3-show") == -1) {
+									        x.className += " w3-show";
+									    } else { 
+									        x.className = x.className.replace(" w3-show", "");
+									    }
+									}
+									$(function () {
+									    $(".scroll-box").hide();
+										    $(".scroll-box:first").show();
+										    $(".admin_tab li").click(function () {
+									        $(".admin_tab li").removeClass("active").css({
+									        	fontWeight:"normal",
+									        	color:"#555"
+									        });
+									        $(this).addClass("active").css({
+									        	fontWeight:"bold",
+									        	color:"#0085cf"
+									        });
+									        $(".scroll-box").hide()
+									        var activeTab = $(this).attr("rel");
+									        $("#" + activeTab).fadeIn()
+									    });
+									});
+
+									$(document).ready(function() {
+									    $(".admin_menu .scroll-box").height($(window).height()); 
+									});
+								</script>
 				        		<h1 class="">Dashboard</h1>
 								<!-- <span style="font-size:30px;cursor:pointer">&#9776; open</span> -->
 								
