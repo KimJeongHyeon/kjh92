@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 
 html, body, div, span, applet, object, iframe,
@@ -156,8 +156,13 @@ textarea {resize:none;}
 
 
 -moz-selection { background-color: #88a4bf; color: #fff; } ::selection { background-color: #88a4bf; color: #fff; }
-
-
+button {
+	border:0;
+	outline: none;
+}
+button:hover, button:focus {
+	outline: none;
+}
 /*input {
    -webkit-appearance: none;
    -webkit-border-radius: 0;
