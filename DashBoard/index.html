@@ -37,9 +37,10 @@
 	<link rel="stylesheet" href="front/css/content.css">
 	<link rel="stylesheet" href="front/css/reset.css">
 	<link rel="stylesheet" href="front/css/responsive.css">
-
-	
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script type="text/javascript" src="front/js/jquery.slimscroll.min.js"></script>
+ 
+    
 
 	<!-- bx 슬라이드 -->
 	<script type="text/javascript" src="front/js/bx/jquery.bxslider.js"></script>
@@ -47,17 +48,10 @@
 	<script type="text/javascript" src="front/js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="front/js/design.js"></script>
 	<link rel="stylesheet" href="front/js/bx/jquery.bxslider.css">	
-
-	<link rel="stylesheet" href="front/css/default.css">	
-	<link rel="stylesheet" href="front/css/layout.css">		
-	<link rel="stylesheet" href="front/css/content.css">
-	<link rel="stylesheet" href="front/css/reset.css">		
-
 	<!--[if lt IE 9]>
-		<script src="common/js/html5shiv.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="front/js/html5shiv.js"></script>
+		<script src="front/js/respond.min.js"></script>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -443,53 +437,224 @@
 								    <div id="admin_menu" class="w3-dropdown-content w3-bar-block w3-border admin_menu">
 								  		<div class="scroll-bar-wrap">
 									  		<ul class="admin_tab">
-									        	<li class="active" rel="tab1">Introduction</li>
-										        <li rel="tab2">CI</li>
+									        	<li class="active" rel="tab1">Timeline</li>
+										        <li rel="tab2">Project</li>
 										    </ul>
-										    <div class="scroll-bar-wrap">
+										    <div class="some-content-related-div">
 										        <div id="tab1" class="scroll-box">
-											<p>1212Consectet adipisicinzzzg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										        </div>
-										         <div class="cover-bar"></div>										        
+										        	<div class="inner-content-div">
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">8:00 am</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">10:00 am</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">2:00 pm</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">8:00 pm</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">8:00 pm</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">8:00 pm</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+											        	<div class="timeline_item">
+											        		<div class="timeline_item__left">
+											        			<div class="time_clock">
+											        				<img src="images/main/img_alarmclock.png" alt="alram" class="img_alram">
+											        				<span class="sp_time__am">8:00 pm</span>
+											        				<span class="sp_time__hour">2 hour ago</span>
+											        			</div>
+											        		</div>
+											        		<div class="timeline_item__right">
+											        			<p class="ti-tit">
+											        				Coffee Break
+											        			</p>
+											        			<p class="ti-desc">
+											        				Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+											        			</p>
+											        		</div>
+											        	</div>
+										        	</div>
+										        </div>		
 										        <div id="tab2" class="scroll-box">
-<p>Consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										        </div>
-										         <div class="cover-bar"></div>
+										        	<div class="inner-content-div">
+											        	<div class="projects_item projects_item_tit">
+															<p class="ti-tit">
+																Latest Projects
+															</p>
+															<p class="ti-desc">
+																총 5개 프로젝트 진행중 
+																<span class="sp-newpro">신규 1개.</span>
+																<span class="sp-oldpro">진행 4개.</span>
+															</p>
+											        	</div>
+											        	<div class="projects_item">
+															<p class="ti-tit">
+																Project01
+															</p>
+															<p class="ti-desc">
+																Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+															</p>
+															<div class="Progress_bar__div">
+																<p class="percent">진행률 : <span class="color01">22%</span></p>
+																<div class="Progress_bar">
+																	<div class="width_bar"></div>
+																</div>
+																<p class="end">프로젝트 완료 : 4pm - 27.03.17</p>
+															</div>
+											        	</div>
+											        	<div class="projects_item">
+															<p class="ti-tit">
+																Project01
+															</p>
+															<p class="ti-desc">
+																Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+															</p>
+															<div class="Progress_bar__div">
+																<p class="percent">진행률 : <span class="color01">22%</span></p>
+																<div class="Progress_bar">
+																	<div class="width_bar"></div>
+																</div>
+																<p class="end">프로젝트 완료 : 4pm - 27.03.17</p>
+															</div>
+											        	</div>
+											        	<div class="projects_item">
+															<p class="ti-tit">
+																Project01
+															</p>
+															<p class="ti-desc">
+																Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+															</p>
+															<div class="Progress_bar__div">
+																<p class="percent">진행률 : <span class="color01">22%</span></p>
+																<div class="Progress_bar">
+																	<div class="width_bar"></div>
+																</div>
+																<p class="end">프로젝트 완료 : 4pm - 27.03.17</p>
+															</div>
+											        	</div>
+											        	<div class="projects_item">
+															<p class="ti-tit">
+																Project01
+															</p>
+															<p class="ti-desc">
+																Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+															</p>
+															<div class="Progress_bar__div">
+																<p class="percent">진행률 : <span class="color01">22%</span></p>
+																<div class="Progress_bar">
+																	<div class="width_bar"></div>
+																</div>
+																<p class="end">프로젝트 완료 : 4pm - 27.03.17</p>
+															</div>
+											        	</div>
+											        	<div class="projects_item">
+															<p class="ti-tit">
+																Project01
+															</p>
+															<p class="ti-desc">
+																Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+															</p>
+															<div class="Progress_bar__div">
+																<p class="percent">진행률 : <span class="color01">22%</span></p>
+																<div class="Progress_bar">
+																	<div class="width_bar"></div>
+																</div>
+																<p class="end">프로젝트 완료 : 4pm - 27.03.17</p>
+															</div>
+											        	</div>
+										        	</div>
+										        </div>		
 										    </div>
 									    </div>
-							<!-- 		    <div class="scroll-bar-wrap">
-										  <div class="scroll-box">
-										    <p>Consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-										  </div>
-										  <div class="cover-bar"></div>
-										</div> -->
 								    </div>
 								</div>
 
@@ -508,11 +673,13 @@
 										    $(".admin_tab li").click(function () {
 									        $(".admin_tab li").removeClass("active").css({
 									        	fontWeight:"normal",
-									        	color:"#555"
+									        	color:"#c1cbd4",
+									        	background: "#2f4050"
 									        });
 									        $(this).addClass("active").css({
 									        	fontWeight:"bold",
-									        	color:"#0085cf"
+									        	color:"#2f4050",
+									        	background:"#fff"
 									        });
 									        $(".scroll-box").hide()
 									        var activeTab = $(this).attr("rel");
@@ -520,8 +687,14 @@
 									    });
 									});
 
-									$(document).ready(function() {
-									    $(".admin_menu .scroll-box").height($(window).height()); 
+									// $(document).ready(function() {
+									//     $(".scroll-box").height($(window).height()); 
+									// });
+
+									$(function(){
+									    $('.inner-content-div').slimScroll({
+									         height: (($(window).height())-170)+'px'
+									    });
 									});
 								</script>
 				        		<h1 class="">Dashboard</h1>
