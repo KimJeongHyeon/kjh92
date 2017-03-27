@@ -71,6 +71,10 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
 .admin_icon li a {display: block; width: 20px; height: 30px;}
 .admin_icon .msg img {width: 20px; margin-top: 8px;}
 .admin_icon .msg a {background: url(../../images/header/btn_msg.png) center center no-repeat; background-size:100%;}
+/*.admin_icon .msg a {background-image: url(../../images/header/btn_msg.png); background-size:100%;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}*/
 .admin_icon .msg a:hover {background: url(../../images/header/btn_msg_active.png) center center no-repeat; background-size:100%;}
 .admin_icon .alrm {padding-right: 10px;}
 .admin_icon .alrm img {width: 15px;}
@@ -331,55 +335,68 @@ wrap,  container, footer, leftmenu 등 해당되는 레이아웃을 지정합니
   box-sizing:border-box;
 }
 
+/* admin_menu */
+.btn_admin {position: absolute; right: 20px; top:-45px; }
+.btn_admin:hover, .btn_admin:focus {background: none;}
+.btn_admin .frm_btn {background:none; border:none; width: 25px; box-sizing:border-box}
+.admin_menu {right: -21px; top:44px; z-index: 50; width: 300px; box-sizing:border-box;}
+.admin_tab {overflow: hidden;}
+.admin_tab li {float: left; width: 50%; box-sizing:border-box; padding: 20px 0; text-align: center; background: #2f4050; color:#c1cbd4; cursor: pointer;}
+.admin_tab .active {background: #fff; color:#2f4050; font-weight: bold;}
+
+
+#tab1 .inner-content-div {padding:15px 0;}
+.admin_menu .timeline_item {
+  line-height: 1.4;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding:0 15px;
+  padding-right: 0; 
+}
+.admin_menu .timeline_item:first-of-type .timeline_item__right {
+  border-top: none;
+}
+.admin_menu .timeline_item:last-of-type .timeline_item__right {
+
+}
+.timeline_item__left {float: left; width: 30%;padding-right: 20px;  }
+.timeline_item__left .time_clock {position: relative; padding-top: 35px;  }
+.timeline_item__left .time_clock .img_alram {position: absolute; right:-20px; top:0; border:1px solid #e7eaec; border-right:none; padding: 3px; background: #f8f8f8;box-sizing: border-box;}
+.sp_time__am {display: block; font-size: 12px; line-height: 1.5; }
+.sp_time__hour {display: block; color:#0d8fdb; font-size: 11px; }
+.timeline_item__right {float: right; width: 70%; border-left:1px solid #e7eaec; border-top:1px solid #e7eaec; box-sizing:border-box; padding:15px 0 15px 15px; }
+.timeline_item__right:hover {background: #f8f8f8;}
+.timeline_item__right .ti-tit {display: block; font-weight:bolder; line-height: 2;  }
+.timeline_item__right .ti-desc {display: block; font-size: 13px; color:#555;}
+
+.admin_menu .projects_item {overflow: hidden; padding: 15px; border-bottom: 1px solid #e7eaec; box-sizing:border-box;}
+.admin_menu .projects_item .ti-tit {font-size: 14px; line-height: 30px; font-weight: 600; color:#2f4050;}
+.admin_menu .projects_item .ti-desc {font-size: 13px; color:#555; line-height: 1.5;}
+.admin_menu .projects_item .Progress_bar__div {margin-top: 10px;}
+.admin_menu .projects_item .percent {display: block; font-size: 11px; color:#555;}
+.admin_menu .projects_item .percent .color01 {display: inline-block; font-size: 11px; color:#0d8fdb;}
+.admin_menu .projects_item .Progress_bar {width: 100%; height: 7px; background: #f1f1f1;border-radius: 10px; margin: 5px 0;}
+.admin_menu .projects_item .Progress_bar .width_bar {width: 22%; height: 7px; background: #ffa200; border-radius: 10px;}
+.admin_menu .projects_item .end {display: block; font-size: 11px; color:#555;}
+
+.admin_menu .projects_item_tit{
+  background: #f1f1f1;
+}
+.admin_menu .projects_item_tit .ti-tit {display: block;
+  background: url(../../images/main/img_pro_icon.png) 0 center no-repeat;
+  padding-left: 30px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: bolder;
+  color:#2f4050;
+}
+.admin_menu .projects_item_tit .ti-desc {color:#888;}
+.admin_menu .projects_item_tit span {display:inline-block; font-size: 12px; color:#0d8fdb;}
+.admin_menu .projects_item_tit .sp-newpro {margin-left: 10px;}
+
 
 /* 오른쪽 section */
 .main-wrap {padding: 20px; position: relative;}
-.btn_admin {position: absolute; right: 20px; top:-45px; }
-.btn_admin:hover {background: none;}
-.btn_admin .frm_btn {background:none; border:none; width: 25px; }
-.admin_menu {right: -20px; top:44px; z-index: 50; width: 300px;}
-
-.admin_menu p {
-  font-family: arial;
-  line-height: 1.4;
-  margin: 0 0 .5em;
-}
-.admin_menu .scroll-bar-wrap {
-  width: 300px;
-  position: relative;
-  /*margin: 2em auto;*/
-}
-.admin_menu .scroll-box {
-  width: 100%;
-  /*height: 295px;*/
-  overflow-y: scroll;
-}
-.admin_menu .scroll-box::-webkit-scrollbar {
-  width: .4em; 
-}
-.admin_menu .scroll-box::-webkit-scrollbar,
-.admin_menu .scroll-box::-webkit-scrollbar-thumb {
-  overflow:visible;
-  border-radius: 4px;
-}
-.admin_menu .scroll-box::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,.2); 
-}
-.admin_menu .cover-bar {
-  position: absolute;
-  background: #fff;;
-  height: 100%;  
-  top: 0;
-  right: 0;
-  width: .4em;
-  -webkit-transition: all .5s;
-  opacity: 1;
-}
-/* MAGIC HAPPENS HERE */
-.admin_menu .scroll-bar-wrap:hover .cover-bar {
-   opacity: 0;
-  -webkit-transition: all .5s;
-}
 
 
 
