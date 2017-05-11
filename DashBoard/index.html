@@ -39,6 +39,10 @@
 	<link rel="stylesheet" href="front/css/responsive.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<script type="text/javascript" src="front/js/jquery.slimscroll.min.js"></script>
+
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
  
     
 
@@ -164,7 +168,7 @@
 				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 			            				<img src="images/main/icon_card_w.png" alt="메뉴1">
 			            			</a>
-			            			<ul class="dropdown-menu">
+			            			<ul class="dropdown-menu mini_nav_menu01">
 			            				<li>
 				            				<div class="mini_sub_tit">
 				            					프로젝트관리
@@ -207,7 +211,7 @@
 				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_diamond_w.png" alt="메뉴2">
 				            		</a>
-				            		<ul class="dropdown-menu">
+				            		<ul class="dropdown-menu mini_nav_menu02">
 			            				<li>
 				            				<div class="mini_sub_tit">
 				            					CSR 관리
@@ -230,7 +234,7 @@
 				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_gift_w.png" alt="메뉴3">
 				            		</a>
-				            		<ul class="dropdown-menu">
+				            		<ul class="dropdown-menu mini_nav_menu03">
 			            				<li>
 				            				<div class="mini_sub_tit">
 				            					경비관리
@@ -246,7 +250,7 @@
 				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_card_w.png" alt="메뉴1">
 				            		</a>
-				            		<ul class="dropdown-menu">
+				            		<ul class="dropdown-menu mini_nav_menu04">
 			            				<li>
 				            				<div class="mini_sub_tit">
 				            					현황관리
@@ -262,7 +266,7 @@
 				            		<a href="#" data-toggle="dropdown" class="mini_icon_menu dropdown-toggle">
 				            			<img src="images/main/icon_diamond_w.png" alt="메뉴2">
 				            		</a>
-				            		<ul class="dropdown-menu">
+				            		<ul class="dropdown-menu mini_nav_menu05">
 			            				<li>
 				            				<div class="mini_sub_tit">
 				            					시스템관리
@@ -417,21 +421,6 @@
 								}
 							</script>
 				        	<div class="main-wrap">
-<!-- 				        		<div class="btn_admin">
-				        			<a class="dropbtn drb" onclick="fn_Admin_drop()">
-										<img src="images/header/btn_admin_menu.png" alt="개인메뉴">
-				        			</a>
-				        			<div class="dropdown admin_drop">
-									  	<div id="admin_menu" class="dropdown-content admin_cont">
-									  		<ul>
-									  			<li><a href="#">Profile</a></li>
-									  			<li><a href="#">Contacts</a></li>
-									  			<li><a href="#">회원정보수정</a></li>
-									  			<li class="logout"><a href="#">Logout</a></li>
-									  		</ul>
-									  	</div>
-									</div>
-				        		</div> -->
 								<div class="w3-dropdown-click btn_admin">
 								    <button onclick="admin_drop()" class="frm_btn"><img src="images/header/btn_admin_menu.png" alt="개인메뉴"></button>
 								    <div id="admin_menu" class="w3-dropdown-content w3-bar-block w3-border admin_menu">
@@ -697,9 +686,23 @@
 									    });
 									});
 								</script>
-				        		<h1 class="">Dashboard</h1>
+
+								<div class="main__inner">
+									<div class="main__cont">
+										<h1 class="main-tit">
+											Dashboard
+										</h1>
+									</div>
+									
+									<div class="main__cont">
+										<div id="form__charts" style="min-width: 310px; height: 400px; max-width: 400px;">
+											
+										</div>
+
+									</div>
+
+								</div>
 								<!-- <span style="font-size:30px;cursor:pointer">&#9776; open</span> -->
-								
 					          	<div class="row placeholders">
 						            <div class="col-xs-6 col-sm-3 placeholder">
 						              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjxnPjx0ZXh0IHg9Ijc1LjUiIHk9IjEwMCIgc3R5bGU9ImZpbGw6I0ZGRkZGRjtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjIwMHgyMDA8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
@@ -727,6 +730,62 @@
 				    </div>
 			    </div>
 			</section>
+
+
+			<script>
+				// Make monochrome colors and set them as default for all pies
+				Highcharts.getOptions().plotOptions.pie.colors = (function () {
+				    var colors = [],
+				        base = Highcharts.getOptions().colors[0],
+				        i;
+
+				    for (i = 0; i < 10; i += 1) {
+				        // Start out with a darkened base color (negative brighten), and end
+				        // up with a much brighter color
+				        colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+				    }
+				    return colors;
+				}());
+
+				// Build the chart
+				Highcharts.chart('form__charts', {
+				    chart: {
+				        plotBackgroundColor: null,
+				        plotBorderWidth: null,
+				        plotShadow: false,
+				        type: 'pie'
+				    },
+				    title: {
+				        text: '2017년 4월 진행 프로젝트'
+				    },
+				    tooltip: {
+				        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				    },
+				    plotOptions: {
+				        pie: {
+				            allowPointSelect: true,
+				            cursor: 'pointer',
+				            dataLabels: {
+				                enabled: true,
+				                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+				                style: {
+				                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+				                }
+				            }
+				        }
+				    },
+				    series: [{
+				        name: 'Brands',
+				        data: [
+				            { name: '진행중', y: 56.33 },
+				            { name: '유지보수', y: 24.03 },
+				            { name: '신규', y: 10.38 },
+				            { name: '완료', y: 4.77 },
+				            { name: '보류', y: 0.91 }
+				        ]
+				    }]
+				});
+			</script>
 		</div>
 		<footer id="footer" class="footer">
 			<div class="footer_wrap">
